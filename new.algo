@@ -1,0 +1,37 @@
+ALGORITHM read a phrase
+VAR
+    var char:STRING;
+    var long:number
+
+BEGIN
+write ("give me a phrase")
+read (char,".")
+    long=char.length-1
+    write ("this is the long of your phrase",long)
+
+END
+VAR char = "welcome to gomycode ."
+
+ALGORITHM read the number of words
+VAR
+    char=string;
+    sum=0;
+BEGIN
+    write ("give me a phrase")
+    read (char)
+    IF (char=" ") 
+    THEN
+        sum+=1
+    END_IF
+    write ("this is the number of words",sum)
+END
+ALGORITHM number of voyels
+VAR
+    v=0
+    char=string
+BEGIN
+    if (char="a" or char="e" or char="u" or char="i" orchar="o" )
+    THEN v+=1
+    END_IF
+    write("this is the voyels",v)
+END
